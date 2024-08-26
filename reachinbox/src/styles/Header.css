@@ -1,0 +1,60 @@
+/* src/styles/Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282828; /* Dark background color */
+  color: white; /* White text color */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 40px; /* Adjust as needed */
+  margin-right: 110px;
+  background-color: #000;
+}
+
+.brand-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.workspace {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between workspace and theme toggle */
+}
+
+.workspace span {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.icon-dropdown {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white; /* White color for the dropdown arrow */
+}
+
+.theme-toggle {
+  cursor: pointer;
+}
+
+.icon-sun {
+  font-size: 18px;
+  /* Placeholder for a sun icon, adjust if using a real icon */
+}
