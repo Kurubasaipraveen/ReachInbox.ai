@@ -1,4 +1,4 @@
-// src/components/Login.js
+
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
@@ -7,20 +7,19 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Redirect to Google login
+    
     window.location.href = `https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=${encodeURIComponent(window.location.origin)}`;
   };
 
   useEffect(() => {
-    // Check if token is in URL
+    
     const query = new URLSearchParams(window.location.search);
     const token = query.get('token');
 
     if (token) {
-      // Store the token in local storage
+      
       localStorage.setItem('token', token);
 
-      // Redirect to the onebox
       navigate('/onebox');
     }
   }, [navigate]);

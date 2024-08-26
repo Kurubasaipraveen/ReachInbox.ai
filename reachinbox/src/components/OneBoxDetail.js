@@ -1,4 +1,4 @@
-// src/components/OneBoxDetail.js
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -12,7 +12,7 @@ const OneBoxDetail = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch thread details
+    
     const fetchThreadData = async () => {
       try {
         const response = await axios.get(`/onebox/${threadId}`);
@@ -40,7 +40,7 @@ const OneBoxDetail = () => {
       <div className="thread-detail">
         <h1>{threadData.title}</h1>
         <p>{threadData.content}</p>
-        {/* Add other details you want to display */}
+      
       </div>
     </div>
   );

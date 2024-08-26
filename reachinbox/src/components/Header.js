@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Header.css';
 
 const Header = () => {
-  // State to track the current theme
+  
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Effect to apply the theme on component mount and whenever it changes
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -18,7 +18,7 @@ const Header = () => {
     const newTheme = isDarkMode ? 'light' : 'dark';
     setIsDarkMode(!isDarkMode);
     document.body.className = newTheme;
-    localStorage.setItem('theme', newTheme); // Save theme preference
+    localStorage.setItem('theme', newTheme); 
   };
 
   return (
@@ -37,7 +37,7 @@ const Header = () => {
         <i className='icon-dropdown'></i>
       </div>
 
-      {/* Theme toggle button */}
+      
       <button className='theme-toggle-button' onClick={toggleTheme}>
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/OneBox.css';
-import 'bootstrap-icons/font/bootstrap-icons.css'; // Ensure this import is present
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
 
 const OneBox = () => {
   const [emails, setEmails] = useState([]);

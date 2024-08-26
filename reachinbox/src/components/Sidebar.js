@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Sidebar.css'; // Ensure this CSS file is correctly configured
+import '../styles/Sidebar.css'; 
 import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
   const navigate=useNavigate();
@@ -9,18 +9,18 @@ const Sidebar = () => {
   const [userInitials, setUserInitials] = useState('');
 
   useEffect(() => {
-    // Function to get the user's initials from local storage
+ 
     const fetchUserInitials = () => {
-      // Retrieve the token or user data from local storage
+     
       const token = localStorage.getItem('token');
 
-      // Assuming the token contains user information or fetch user information using the token
+     
       if (token) {
-        // Here we simulate fetching the user email from the token or an API using the token
-        const user = { email: 'johndoe@example.com' }; // Replace this with actual API call if needed
+
+        const user = { email: 'johndoe@example.com' };
 
         if (user && user.email) {
-          // Extract the first two characters of the email
+         
           const initials = user.email.slice(0, 2).toUpperCase();
           setUserInitials(initials);
         }

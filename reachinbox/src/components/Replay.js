@@ -20,7 +20,7 @@ const ReplyEmail = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle sending the email here
+   
     console.log(emailData);
   };
 
